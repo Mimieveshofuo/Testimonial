@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body{
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    background-color: #EDF2F8;
+
+}
+.main-content h1{
+    font-size: 19px;
+    color: white;
+}
+.text h1{
+    color: hsl(219, 29%, 14%);
+    font-size: 19px;
+}
+.ptext{
+    color: white; 
+    opacity: 70%;
+}
+.ptext-2{
+    opacity: 70%; color: hsl(219, 29%, 14%);
+}
+.content{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px
+}
+.dan{
+    background-color:hsl(263, 55%, 52%); 
+    grid-column: 1/3;
+    height: auto;
+}
+.jo{
+    background-color:  hsl(217, 19%, 35%);
+    height: auto;
+}
+.kira{
+    background-color: hsl(0,0%,100%);
+    height: auto;
+    position: relative;
+    top: -22rem;
+}
+.jea{
+    background-color: hsl(0,0%,100%) ;
+    grid-row: 2/3;
+    top: -17.5rem;
+    height: 38%;
+}
+.pat{
+    background-color:hsl(219, 29%, 14%); 
+    grid-column: 2/4;
+    top: -17.5rem;
+    height: 38%;
+}
+.user span{
+    display: block;
+}
+.user h1{
+    color: white;
+    font-size: 12px;
+}
+.grad span{
+    display: block;
+}
+.grad h1{
+    font-size: 12px;
+    color: hsl(219, 29%, 14%);
+}
+.user span:nth-child(2), .grad span:nth-child(2){
+    opacity: 50%;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+}
+.card-header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 20px;  
+}
+.size{
+    padding: 30px;
+    border-radius: 15px;
+}
+.text {
+ color:hsl(219, 29%, 14%);
+}
+.text P{
+    opacity: 70%;
+    line-height: 20px;
+}
+.dan-img{
+    border: 2px solid white;
+}
+.pat img{
+    border:2px solid hsl(263, 55%, 52%);
+}
+.quote img{
+    position: absolute;
+    left: 30rem;
+    top: 6rem ;
+    opacity: 70%;
+}
+@media screen and (min-width:1440px) {
+    .jea{
+        top: -16rem;
+    }
+    .pat{
+        top: -16rem;
+    }
+    .kira{
+        top: -21rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .content{
+        display: block;
+        width: 90%;
+    }
+    .main-content h1, .text h1{
+        font-size: 22px;
+    }
+    .size{
+        margin-top: 30px;
+    }
+    .pat{
+      
+        position: unset;
+    }
+    .jea{
+        position: unset;
+    }
+    .kira{
+        top: unset;
+    }
+    .quote{
+        position: relative;
+    }
+    .quote img{
+        top: 0;
+        right: 0;
+        left: unset;
+        opacity:50%;
+    }
+}
